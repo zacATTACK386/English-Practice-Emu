@@ -261,22 +261,16 @@
                 box.remove()
                 div.appendChild(sub)
                 document.body.appendChild(div)
-
+                <script>
                 window.EJS_player = "#game";
-                window.EJS_gameName = parts.shift();
-                window.EJS_biosUrl = "";
                 window.EJS_gameUrl = "data/Super Mario Bros. + Duck Hunt (USA).nes";
-                window.EJS_core = nes;
+                window.EJS_core = "nes";
                 window.EJS_pathtodata = "data/";
                 window.EJS_startOnLoaded = true;
-                window.EJS_DEBUG_XX = enableDebug;
-                window.EJS_disableDatabases = true;
-                window.EJS_threads = enableThreads;
-                if (browserMode) {
-                    window.EJS_browserMode = browserMode;
-                }
+                </script>
 
-                script.src = "data/loader.js";
+                <script src="data/loader.js"></script>
+
                 document.body.appendChild(script);
             }
             
